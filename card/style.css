@@ -1,0 +1,145 @@
+td {
+  border: 2px dotted black;
+  border-radius: 9px;
+  width: 90px;
+  height: 120px;
+  margin: 3px;
+  padding: 6px;
+}
+
+.card-name {
+  position: absolute;
+  padding: 3px;
+  margin: 1px;
+  top: 0;
+  right: 5px;
+  text-align: center;
+  font-size: smaller;
+}
+
+.card-stat {
+  position: absolute;
+  padding: 5px;
+  margin: 3px;
+  height: 10px;
+  line-height: 0.5;
+  vertical-align: middle;
+  font-size: medium;
+  text-align: center;
+}
+
+.stat-defense {
+  top: 0;
+  left: 0;
+  border: 3px outset rgb(0, 255, 0);
+  background-color: chartreuse;
+}
+
+.stat-attack {
+  bottom: 0;
+  left: 0;
+  border: 3px outset red;
+  background-color: #ff3232;
+}
+
+.stat-range {
+  bottom: 0;
+  right: 0;
+  border: 3px inset cyan;
+  background-color: cyan;
+  border-radius: 20px;
+}
+
+#chat {
+  z-index: 0;
+  border: 2px double red;
+  position: absolute;
+  right: 5%;
+  top: 70%;
+  width: 300px;
+  height: 300px;
+}
+
+.slot {
+  border: 3px solid black;
+  box-shadow: inset 0 0 32px 1px rgba(0, 0, 0, 0.66);
+  background: radial-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.33) 80%, transparent 100%);
+  max-width: 90px;
+  max-height: 120px;
+  z-index: -1;
+  top: 0;
+}
+
+.card-image {
+  height: inherit;
+  width: inherit;
+}
+
+card {
+  border-radius: 9px;
+  width: 90px;
+  height: 120px;
+  max-width: 90px;
+  max-height: 120px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  top: auto;
+  box-shadow: 3px 9px 32px 1px rgba(0, 0, 0, 0.66);
+  z-index: 1;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
+card :hover {
+  box-shadow: 0 0 32px 1px rgba(0, 0, 0, 0.33);
+}
+
+.indeck {
+  top: 0px;
+}
+
+.inhand {
+  top: 128px;
+}
+
+.infrontline {
+  top: 256px;
+  left: 300px;
+}
+
+.player {
+  background-color: rgba(50, 150, 255, 0.33);
+  border: 3px solid #3296ff;
+}
+
+.player :hover {
+  box-shadow: inset 0 0 32px 1px #3296ff 0 0 32px 3px #3296ff;
+}
+
+.enemy {
+  background-color: rgba(255, 50, 50, 0.33);
+  border: 3px solid #ff3232;
+}
+
+.enemy :hover {
+  box-shadow: inset 0 0 32px 1px #ff3232, 0 0 32px 3px #ff3232;
+}
+
+.battlefield {
+  background-color: rgba(0, 0, 0, 0.33);
+  margin: 16px;
+  padding: 8px;
+  display: flex;
+  align-content: stretch;
+  justify-content: space-around;
+}
+
+.frontline,
+.backline {
+  width: 100%;
+  border: 1px dashed rgba(0, 0, 0, 0.66);
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=style.css.map */

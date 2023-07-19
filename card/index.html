@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <title>Document</title>
+</head>
+<body> 
+  <card class="player" id="01">
+    <span class="card-name">Card Name</span>
+    <span class="card-stat stat-attack">1</span>
+    <span class="card-stat stat-range">3</span>
+    <span class="card-stat stat-defense">2</span>
+  </card>
+
+  <card class="enemy" id="02">
+    <span class="card-name">Card Name</span>
+    <span class="card-stat stat-attack">1</span>
+    <span class="card-stat stat-range">3</span>
+    <span class="card-stat stat-defense">2</span>
+  </card>
+
+  <table class="playfield">
+    <tr class="player_hand">
+      <td class="slot" id="P.A1"></td>
+      <td class="slot" id="P.A2"></td>
+      <td class="slot" id="P.A3"></td>
+      <td class="slot" id="P.A4"></td>
+      <td class="slot" id="P.A5"></td>
+    </tr>
+  </table>
+   
+  <table class="battlefield">
+    <tr class="player_backline">
+      <td class="slot" id="P.B1"></td>
+      <td class="slot" id="P.B2"></td>
+      <td class="slot" id="P.B3"></td>
+      <td class="slot" id="P.B4"></td>
+      <td class="slot" id="P.B5"></td>
+    </tr>
+    <tr class="player_frontline">
+      <td class="slot" id="P.F1"></td>
+      <td class="slot" id="P.F2"></td>
+      <td class="slot" id="P.F3"></td>
+      <td class="slot" id="P.F4"></td>
+      <td class="slot" id="P.F5"></td>
+    </tr>
+    
+    <tr class="enemy_frontline">
+      <td class="slot" id="E.F1"></td>
+      <td class="slot" id="E.F2"></td>
+      <td class="slot" id="E.F3"></td>
+      <td class="slot" id="E.F4"></td>
+      <td class="slot" id="E.F5"></td>
+    </tr>  
+    <tr class="enemy_backline">
+      <td class="slot" id="E.B1"></td>
+      <td class="slot" id="E.B2"></td>
+      <td class="slot" id="E.B3"></td>
+      <td class="slot" id="E.B4"></td>
+      <td class="slot" id="E.B5"></td>
+    </tr>
+  </table>
+
+  <table class="enemyfield">
+    <tr class="enemy_hand">
+      <td class="slot" id="E.A1"></td>
+    </tr>
+    <tr class="enemy_cards">
+      <td id="enemy_deck"></td>
+      <td id="enemy_graveyard"></td>
+    </tr>
+  </table>
+
+  <script src="app3.js"></script>
+</body>
+</html>
