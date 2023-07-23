@@ -7,72 +7,100 @@
   <title>Document</title>
 </head>
 <body> 
-  <card class="player" id="01">
-    <span class="card-name">Card Name</span>
-    <span class="card-stat stat-attack">1</span>
-    <span class="card-stat stat-range">3</span>
-    <span class="card-stat stat-defense">2</span>
-  </card>
+  <main>
+    <div class="card">   
+      <span class="card-image"></span>
+      <span class="card-name">Card Name</span>
+      <span class="card-stat stat-defense">1</span>
+      <span class="card-stat stat-attack">2</span>
+      <span class="card-stat stat-range">3</span>
+    </div>
 
-  <card class="enemy" id="02">
-    <span class="card-name">Card Name</span>
-    <span class="card-stat stat-attack">1</span>
-    <span class="card-stat stat-range">3</span>
-    <span class="card-stat stat-defense">2</span>
-  </card>
+    <section class="enemy">
+      <span class="card-name">Card Name</span>
+      <span class="card-stat stat-attack">1</span>
+      <span class="card-stat stat-range">3</span>
+      <span class="card-stat stat-defense">2</span>
+      
+      <table class="enemy-cards">
+        <tbody>
+          <tr>
+            <td id="enemy-deck">deck</td>
+            <td id="enemy-graveyard">graveyard</td>
+          </tr>
+          <tr class="enemy-hand">
+            <td class="slot" id="E.A1">E.A1</td>
+            <td class="slot" id="E.A2">E.A2</td>
+            <td class="slot" id="E.A3">E.A3</td>
+            <td class="slot" id="E.A4">E.A4</td>
+            <td class="slot" id="E.A5">E.A5</td>
+            <td class="slot" id="E.A6">E.A6</td>
+            <td class="slot" id="E.A7">E.A7</td>
+          </tr> 
+        </tbody>
+      </table>
 
-  <table class="playfield">
-    <tr class="player_hand">
-      <td class="slot" id="P.A1"></td>
-      <td class="slot" id="P.A2"></td>
-      <td class="slot" id="P.A3"></td>
-      <td class="slot" id="P.A4"></td>
-      <td class="slot" id="P.A5"></td>
-    </tr>
-  </table>
-   
-  <table class="battlefield">
-    <tr class="player_backline">
-      <td class="slot" id="P.B1"></td>
-      <td class="slot" id="P.B2"></td>
-      <td class="slot" id="P.B3"></td>
-      <td class="slot" id="P.B4"></td>
-      <td class="slot" id="P.B5"></td>
-    </tr>
-    <tr class="player_frontline">
-      <td class="slot" id="P.F1"></td>
-      <td class="slot" id="P.F2"></td>
-      <td class="slot" id="P.F3"></td>
-      <td class="slot" id="P.F4"></td>
-      <td class="slot" id="P.F5"></td>
-    </tr>
-    
-    <tr class="enemy_frontline">
-      <td class="slot" id="E.F1"></td>
-      <td class="slot" id="E.F2"></td>
-      <td class="slot" id="E.F3"></td>
-      <td class="slot" id="E.F4"></td>
-      <td class="slot" id="E.F5"></td>
-    </tr>  
-    <tr class="enemy_backline">
-      <td class="slot" id="E.B1"></td>
-      <td class="slot" id="E.B2"></td>
-      <td class="slot" id="E.B3"></td>
-      <td class="slot" id="E.B4"></td>
-      <td class="slot" id="E.B5"></td>
-    </tr>
-  </table>
+      <table class="battlefield">
+        <tbody>
+          <tr class="enemy-frontline">
+            <td class="slot" id="E.F1"></td>
+            <td class="slot" id="E.F2"></td>
+            <td class="slot" id="E.F3"></td>
+            <td class="slot" id="E.F4"></td>
+            <td class="slot" id="E.F5"></td>
+          </tr>  
+          <tr class="enemy-backline">
+            <td class="slot" id="E.B1"></td>
+            <td class="slot" id="E.B2"></td>
+            <td class="slot" id="E.B3"></td>
+            <td class="slot" id="E.B4"></td>
+            <td class="slot" id="E.B5"></td>
+          </tr>
+        </tbody>
+      </table>   
+    </section>
 
-  <table class="enemyfield">
-    <tr class="enemy_hand">
-      <td class="slot" id="E.A1"></td>
-    </tr>
-    <tr class="enemy_cards">
-      <td id="enemy_deck"></td>
-      <td id="enemy_graveyard"></td>
-    </tr>
-  </table>
+    <section class="player">
+      <table class="battlefield">
+        <tbody>
+          <tr class="player-frontline">
+            <td class="slot" id="P.F1"></td>
+            <td class="slot" id="P.F2"></td>
+            <td class="slot" id="P.F3"></td>
+            <td class="slot" id="P.F4"></td>
+            <td class="slot" id="P.F5"></td>
+          </tr>
+          <tr class="player-backline">
+            <td class="slot" id="P.B1">P.B1</td>
+            <td class="slot" id="P.B2">P.B2</td>
+            <td class="slot" id="P.B3"></td>
+            <td class="slot" id="P.B4"></td>
+            <td class="slot" id="P.B5"></td>
+          </tr>
+        </tbody>
+      </table>  
 
-  <script src="app3.js"></script>
+      <div id="player-hand-display"></div>
+
+      <table class="player-cards">
+        <tbody>
+          <tr class="player-hand">
+            <td class="slot" id="P.A1">P.A1</td>
+            <td class="slot" id="P.A2">P.A2</td>
+            <td class="slot" id="P.A3">P.A3</td>
+            <td class="slot" id="P.A4">P.A4</td>
+            <td class="slot" id="P.A5">P.A5</td>
+            <td class="slot" id="P.A6">P.A6</td>
+            <td class="slot" id="P.A7">P.A7</td>
+          </tr> 
+          <tr>
+            <td id="player-deck">deck</td>
+            <td id="player-graveyard">graveyard</td>
+          </tr>
+        </tbody>
+      </table>  
+    </section>
+  </main>
+  <script src="app4.js"></script>
 </body>
 </html>
