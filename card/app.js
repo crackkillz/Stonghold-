@@ -1,5 +1,4 @@
-
-   const playerDeck = [
+const playerDeck = [
     {"card_number": 1, "card_name": "Swordsman", "health": 20, "damage": 15, "range": 1, "image": "swordsman.jpg"},
     {"card_number": 2, "card_name": "Swordsman", "health": 20, "damage": 15, "range": 1, "image": "swordsman.jpg"},
     {"card_number": 3, "card_name": "Swordsman", "health": 20, "damage": 15, "range": 1, "image": "swordsman.jpg"},
@@ -99,7 +98,6 @@ class GameStart {
     }
   
     startGame() {
-      // Assuming playerDeck and enemyDeckDa are defined somewhere
       this.shuffleDeck(playerDeck);
       this.shuffleDeck(enemyDeck);
     
@@ -297,17 +295,5 @@ game.startGame()
         this.enemyDeckCount.innerHTML = this.enemyDeck.length;
     }
 }
-
-const gameUI = {
-    // ...
-
-    update() {
-        this.playerLife.innerHTML = this.game.player.life;
-        this.enemyLife.innerHTML = this.game.enemy.life;
-        this.playerDeckCount.innerHTML = this.playerDeck.length;
-        this.enemyDeckCount.innerHTML = this.enemyDeck.length;
-    }
-};
-
 
 
