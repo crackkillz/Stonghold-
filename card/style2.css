@@ -30,7 +30,8 @@ td {
 }
 
 .card-name {
-  position: absolute;
+  position: relative;
+  display: none;
   padding: 3px;
   margin: 1px;
   top: 0;
@@ -40,7 +41,8 @@ td {
 }
 
 .card-stat {
-  position: absolute;
+  position: relative;
+  display: none;
   padding: 5px;
   margin: 3px;
   height: 10px;
@@ -51,6 +53,7 @@ td {
 }
 
 .stat-defense {
+  display: none;
   top: 0;
   left: 0;
   border: 3px outset rgb(0, 255, 0);
@@ -58,6 +61,7 @@ td {
 }
 
 .stat-attack {
+  display: none;
   bottom: 0;
   left: 0;
   border: 3px outset red;
@@ -65,6 +69,7 @@ td {
 }
 
 .stat-range {
+  display: none;
   bottom: 0;
   right: 0;
   border: 3px inset cyan;
@@ -130,6 +135,12 @@ td {
 .slot:hover {
   box-shadow: 0 0 32px 1px rgba(0, 0, 0, 0.33);
 }
+.player-hand-display {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Player field specific styles */
 .playerfield {
@@ -160,6 +171,8 @@ td {
 }
 
 .enemyfield .enemy_hand td {
+  left: auto;
+  right: auto;
   width: auto;
   height: auto;
   background-color: rgba(0, 0, 0, 0.5);
