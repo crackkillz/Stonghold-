@@ -1,0 +1,121 @@
+{
+  "cards": [
+    {
+      "card number": 1,
+      "card name": "Swordsman",
+      "health": 20,
+      "damage": 15,
+      "range": 1,
+      "quantity": 5,
+      "image": "Swordsman.jpg"
+    },
+    {
+      "card number": 2,
+      "card name": "Spearman",
+      "health": 15,
+      "damage": 15,
+      "range": 2,
+      "quantity": 4,
+      "image": "Spearman.jpg"
+    },
+    {
+      "card number": 3,
+      "card name": "Knight",
+      "health": 30,
+      "damage": 10,
+      "range": 1,
+      "quantity": 2,
+      "image": "Knight.jpg"
+    },
+    {
+      "card number": 4,
+      "card name": "Archer",
+      "health": 15,
+      "damage": 10,
+      "range": 3,
+      "quantity": 5,
+      "image": "Archer.jpg"
+    },
+    {
+      "card number": 5,
+      "card name": "Cavalry",
+      "health": 25,
+      "damage": 15,
+      "range": 1,
+      "quantity": 3,
+      "image": "Cavalry.jpg"
+    },
+    {
+      "card number": 6,
+      "card name": "Crossbowman",
+      "health": 20,
+      "damage": 10,
+      "range": 2,
+      "quantity": 4,
+      "image": "Crossbowman.jpg"
+    },
+    {
+      "card number": 7,
+      "card name": "Squire",
+      "health": 10,
+      "damage": 10,
+      "range": 1,
+      "quantity": 3,
+      "image": "Squire.jpg"
+    },
+    {
+      "card number": 8,
+      "card name": "Ballista",
+      "health": 40,
+      "damage": 20,
+      "range": 3,
+      "quantity": 1,
+      "image": "Ballista.jpg"
+    },
+    {
+      "card number": 9,
+      "card name": "Catapult",
+      "health": 35,
+      "damage": 15,
+      "range": 3,
+      "quantity": 1,
+      "image": "Catapult.jpg"
+    },
+    {
+      "card number": 10,
+      "card name": "Axeman",
+      "health": 15,
+      "damage": 10,
+      "range": 1,
+      "quantity": 4,
+      "image": "Axeman.jpg"
+    },
+    {
+      "card number": 11,
+      "card name": "Pikeman",
+      "health": 15,
+      "damage": 10,
+      "range": 2,
+      "quantity": 4,
+      "image": "Pikeman.jpg"
+    },
+    {
+      "card number": 12,
+      "card name": "Shield Bearer",
+      "health": 35,
+      "damage": 0,
+      "range": 1,
+      "quantity": 2,
+      "image": "ShieldBearer.jpg"
+    },
+    {
+      "card number": 13,
+      "card name": "Paladin",
+      "health": 30,
+      "damage": 15,
+      "range": 1,
+      "quantity": 2,
+      "image": "Paladin.jpg"
+    }
+  ]
+}

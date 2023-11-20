@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    background: linear-gradient(90deg, #000000, #343434, #333);
+    background-size: 400% 400%;
+    animation: gradientAnimation 30s ease infinite;
+    padding: 0;
+}
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.game-container {
+    display: flex;
+    border: 10px double purple;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.player {
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.hand-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    
+}
+.card{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 150px;
+    width: 100px;
+    z-index: 0;
+}
+.card image {
+    height: 150px;
+    width: 100px;
+}
+.cardzone {
+    width: 100px;
+    height: 150px;
+    border: 1px solid #555;
+    margin-right: 5px;
+}
+
+.player2Backline,
+.player2Frontline,
+.player1Backline,
+.player1Frontline {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.library, #deck, #graveyard {
+    border: 1px solid #555;
+    height: 150px;
+    width: 210px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 5px
+}
+
+.player {
+    background-color: #f0f0f0;
+}
+
+.cardzone {
+    background-color: #ddd;
+}
+
+#deck, #graveyard {
+    background-color: #ccc;
+}
+
